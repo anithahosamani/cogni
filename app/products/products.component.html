@@ -1,0 +1,16 @@
+<div>
+  <input  type="text" [(ngModel)]="product_name" (keyup)="search()" />
+
+  <p>Searched array</p>
+  <li *ngFor="let x1 of new_array; let x=index" (click)="select(x1,x)">{{x1}} </li>
+
+
+  <p>selected array</p>
+  <div *ngFor="let e of selected_array;   let i=index " (click)="remove(i)"> {{e}}</div>
+
+
+  <p style="color:DodgerBlue;">{{selected_array}}</p>
+
+ 
+
+</div>
